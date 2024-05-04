@@ -26,6 +26,7 @@ h1DOM.addEventListener("click", () => {
   const prevIndex = (liekana + 1) % colors.length;
   const currentIndex = liekana === 0 ? colors.length - 1 : liekana - 1;
 
-  h1DOM.classList.remove(colors[prevIndex]);
+  // h1DOM.classList.remove(colors[prevIndex]);
+  h1DOM.classList.remove(...colors);
   h1DOM.classList.add(colors[currentIndex]);
 });
